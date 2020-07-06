@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <h1>Caculator</h1>
+    <lable><input type="text" id="soThu1"></lable>
+    <lable><input type="text" id="soThu2"></lable>
+    <div>
+        <br>
+        <input type="button" value="addition(+)" onclick="toAdd();">
+        <input type="button" value="Subtraction(-)" onclick="toSub();">
+        <input type="button" value="Multi(*)" onclick="toMul()";>
+        <input type="button" value="Division(/)" onclick="toDiv();">
+
+    </div>
+    <br>
+    <br>
+    <p id="result"></p>
+</form>
+<script>
+    function toAdd() {
+        let soThu1 = document.getElementById("soThu1").value;
+        let soThu2 = document.getElementById("soThu2").value;
+        soThu1 = parseInt(soThu1);
+        soThu2 =parseInt(soThu2);
+        let ketQua = 0;
+        ketQua = soThu1 + soThu2
+        document.getElementById("result").innerText += "Result= " + ketQua;
+    }function toSub() {
+        let soThu1 = document.getElementById("soThu1").value;
+        let soThu2 = document.getElementById("soThu2").value;
+        soThu1 = parseInt(soThu1);
+        soThu2 =parseInt(soThu2);
+        let ketQua = 0;
+        ketQua = soThu1 - soThu2
+        document.getElementById("result").innerText += "Result= " + ketQua;
+    }function toMul() {
+        let soThu1 = document.getElementById("soThu1").value;
+        let soThu2 = document.getElementById("soThu2").value;
+        soThu1 = parseInt(soThu1);
+        soThu2 =parseInt(soThu2);
+        let ketQua = 0;
+        ketQua = soThu1*soThu2
+        document.getElementById("result").innerText += "Result= " + ketQua;
+    }function toDiv() {
+        let soThu1 = document.getElementById("soThu1").value;
+        let soThu2 = document.getElementById("soThu2").value;
+        soThu1 = parseInt(soThu1);
+        soThu2 =parseInt(soThu2);
+        let ketQua = 0;
+        ketQua = soThu1/soThu2
+        document.getElementById("result").innerText += "Result= " + ketQua;
+    }
+</script>
+</body>
+</html>

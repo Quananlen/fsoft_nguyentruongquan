@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    /*Khai báo biến: */
+    var  inputPh;
+    var  inputCh;
+    var  inputBio;
+    /*Nhập từ bàn phím: */
+    inputPh = prompt(" Enter the Ph" );
+    inputCh  = prompt(" Enter the Ch");
+    inputBio  = prompt(" Enter the Bio");
+    /*Chyển đổi:*/
+    var ph = parseInt(inputPh);
+    var ch = parseInt(inputCh);
+    var bio = parseInt(inputBio);
+    var S = ph+ ch + bio;
+    var ave = S/3;
+    document.write("Điển trung bình="+ ave);
+    document.write ("<br>>");
+    document.write("Tổng=" + S );
+</script>
+</body>
+</html>
