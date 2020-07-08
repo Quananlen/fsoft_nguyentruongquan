@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+   <script>
+       let moneyTele=parseInt(prompt("Cước điện thoại:"));
+       if( moneyTele>300) {
+           document.write("Tiền cước điện thoại hơn 300 phút" + moneyTele * 0.3 + "VND");
+       }else if(moneyTele>100){
+           document.write("Tiền cước điện thoại lớn hơn 100 phút" + moneyTele * 0.2 + "VND");
+       } else
+             document.write("Tiền cước điện thoại nhở hơn 100 phút"+moneyTele* 0.1 + "VND");
+   </script>
+</body>
+</html>

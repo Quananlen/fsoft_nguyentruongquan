@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let edgeFirts=parseInt(prompt("Cạnh thứ nhất của tam giác"));
+    let edgeSecond=parseInt(prompt("Cạnh thứ hai của tam giác"));
+    let edgeThird =parseInt(prompt("Cạnh thứ ba của tam giacs"));
+
+    if(edgeFirts > 0  && edgeSecond > 0 && edgeThird > 0 && edgeFirts + edgeSecond > edgeThird && edgeFirts + edgeThird > edgeSecond && edgeSecond + edgeThird > edgeFirts)
+
+        // if (edgeFirts + edgeSecond > edgeThird && edgeFirts + edgeThird > edgeSecond && edgeSecond + edgeThird > edgeFirts) {
+            document.write("Là 3 cạnh của tam giác");
+        // }
+     else
+        document.write("không phải 3 canh tam giác");
+</script>
+</body>
+</html>
