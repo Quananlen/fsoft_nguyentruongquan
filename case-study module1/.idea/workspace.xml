@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2bd555ab-87a6-437b-9b2d-0c6ee6dd6fe3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/case-study module1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yeu_cau_1/yeu_cau_1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module1/HTML form&amp; table/thuc hanh/tao_bang_nang_cao.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module1/bien_kieu_du_lieu_va_toan_tu/bai_tap/debug.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module1/bien_kieu_du_lieu_va_toan_tu/thuc_hanh/debug.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module1/cau_truc_dieu_kien_1/thuc_hanh/cau_truc_if_else_if.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module1/cau_truc_dieu_kien_1/thuc_hanh/cau_truc_switch_case 1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module1/cau_truc_dieu_kien_1/thuc_hanh/cau_truc_switch_case.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module1/cau_truc_dieu_kien_1/thuc_hanh/cau_truc_switch_case_2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module1/cau_truc_dieu_kien_1/thuc_hanh/luyen_tap_voi_cau_truc_if_else.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module1/cau_truc_dieu_kien_1/thuc_hanh/su_kien_chuọt.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module1/cau_truc_dieu_kien_1/thuc_hanh/toan_tu_ba_ngoi.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module1/cau_truc_dieu_kien_1/thuc_hanh/toan_tu_ba_ngoi_1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/HTML &amp; form/bai tap/dang_ky_hoc_vien.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/HTML &amp; form/bai tap/form dàn ky nguoi dung.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/HTML &amp; form/bai tap/form_khach hàng.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/HTML &amp; form/bai tap/tao_bang_can_ban.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/HTML &amp; form/bai tap/tao_bang_nang_cao.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/HTML &amp; form/bai tap/tao_form_don_gian.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/HTML &amp; form/thuc hanh/creat a form look for google.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/HTML &amp; form/thuc hanh/simpleform.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/HTML &amp; form/thuc hanh/tao_nang_cao.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/HTML &amp; form/thuc hanh/tạo bảng cơ bản.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/HTML form&amp; table/bai tap/form_khach hàng.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module1/HTML form&amp; table/bai tap/form_khach hàng.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/HTML form&amp; table/bai tap/tao_bang_can_ban.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module1/HTML form&amp; table/bai tap/tao_bang_can_ban.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/HTML form&amp; table/bai tap/tao_bang_co_ban_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module1/HTML form&amp; table/bai tap/tao_bang_co_ban_2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/HTML form&amp; table/bai tap/tao_bang_nang_cao.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module1/HTML form&amp; table/bai tap/tao_bang_nang_cao.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/bien_kieu_du_lieu_va_toan_tu/bai_tap/may_tinh_don_gian.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module1/bien_kieu_du_lieu_va_toan_tu/bai_tap/may_tinh_don_gian.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/cau_truc_dieu_kien_1/bai_tap/bai_hoc.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module1/cau_truc_dieu_kien_1/bai_tap/bai_hoc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/cau_truc_dieu_kien_1/thuc_hanh/kiem_tra_năm_nhuan.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/tong_quan_javascript/thuc_hanh/hien_thi_dau_ra.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module1/tong_quan_javascript/thuc_hanh/hien_thi_dau_ra.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/tong_quan_javascript/thuc_hanh/nhung_javascipt.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module1/tong_quan_javascript/thuc_hanh/nhung_javascipt.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="case-study module1" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1eLuXNiNlDiMZlE32DLahrKqsQm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2bd555ab-87a6-437b-9b2d-0c6ee6dd6fe3" name="Default Changelist" comment="" />
+      <created>1594113232855</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1594113232855</updated>
+      <workItem from="1594113237845" duration="3054000" />
+      <workItem from="1594124461613" duration="983000" />
+      <workItem from="1594125529923" duration="1394000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="137" y="25" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594126841741">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="137" y="25" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738@0.0.1366.738" timestamp="1594126841741" />
+    <state x="339" y="165" key="run.anything.popup" timestamp="1594125606187">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1594125606187" />
+  </component>
+</project>
