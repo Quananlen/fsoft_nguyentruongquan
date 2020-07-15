@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = prompt("nhập vào chuổi");
+    let b = prompt("nhập vào chuổi");
+    // if(a===b)
+    //     alert("hai chuổi bằng nhau")
+    // else
+    //     alert("hai chuổi khác nhau")
+    let check = true;
+    if (a.length === b.length) {
+        for (let i = 0; i < a.length; i++) {
+            if (a[i] !== b[i]) {
+                check = false;
+                break
+            } else
+                check = true
+        }
+    } else
+        check = false;
+    if (check) {
+        alert("hai chuổi bằng nhau")
+    } else {
+        alert("hai chuổi không bằng nhau")
+    }
+
+
+</script>
+</body>
+</html>

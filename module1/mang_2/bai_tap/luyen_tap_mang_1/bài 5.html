@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num=parseInt(prompt("nhập vào đi nè"));
+     let array=new Array(num);
+    //  let array=[num];
+    for(let i=0; i< array.length;i++) {
+        array[i] = parseInt(prompt("nhập giá trị cho phần tử" + (i + 1)))
+    }
+    let count = 0;
+    for (let j=0;j<array.length;j++){
+        if(array[j]<0){
+            document.write(array[j]+"<br>");
+            count++;
+        }
+    }
+    document.write("Count="+count);
+</script>
+</body>
+</html>

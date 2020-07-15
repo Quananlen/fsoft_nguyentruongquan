@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+      <script>
+          let month=parseInt(prompt("số tháng gửi"));
+          let laiSuat =parseFloat(prompt("lãi suất"));
+          let money=parseInt(prompt("tiền gửi vào"));
+          let total=money;
+          for( let i=0; i< month;i++){
+               tienLai= total*laiSuat;
+               total=  total+tienLai;
+          }document.write(total);
+      </script>
+</body>
+</html>

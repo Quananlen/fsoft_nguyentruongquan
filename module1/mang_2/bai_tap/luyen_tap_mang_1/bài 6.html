@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tìm kí tự trong mảng</title>
+</head>
+<body>
+<script>
+    let num=parseInt(prompt("nhập vào đi nè"));
+    let array=new Array(num);
+    //  let array=[num];
+    for(let i=0; i< array.length;i++) {
+        array[i] = prompt("nhập giá trị cho phần tử" + (i + 1))
+    }
+     let check=true;
+    for(let j=0;j<array.length; j++){
+        if(array[j] === "V") {
+            alert("V is in the array");
+            check= false;
+            break
+            }
+    }if(check){
+        alert("V is not in the array")
+     }
+
+</script>
+</body>
+</html>

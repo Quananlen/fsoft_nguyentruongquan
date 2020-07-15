@@ -18,10 +18,44 @@
       let quantityInclued;
       let rendDays;
       let totalPay;
+
+      let check=false;
       name=prompt("Input name:");
-      cmnd=prompt("Input cmnd:");
+      do {
+         cmnd = prompt("Input cmnd:");
+         if(!isNaN (cmnd)){
+             cmnd=Number.parseFloat(cmnd);
+         }
+         if (!Number.isInteger(cmnd)){
+             alert("không phải là sô nguyên");
+             continue;
+         }
+         if(cmnd<10000000||cmnd>99999999){
+             alert("không đúng định dạng");
+             continue;}
+         check = true;
+      } while (!check);
+         check = false;
       birthday=prompt("Input birthday:");
-      email=prompt("Input email:");
+      do{
+             let countAt=0;
+             let countDoc=0;
+              email=prompt("Input email:");
+              for(let i=0;i<email.length;i++) {
+                  if (email.charAt(i) === "@") {
+                      countAt++;
+                      for (let j = i + 1; j < email.length; j++) {
+                          if (email.charAt(j) === ".") {
+                              countDoc++
+                          }
+                      }
+                  }
+              }
+              if(countAt!=1 || countDoc!=1){
+                  alert("email bạn nhập không đúng")
+              }else (check=true);
+      }while (!check);
+          check=false;
       address=prompt("Input address:");
       typeService=prompt("Input service :");
       typeRoom=prompt("Input typeroom:");

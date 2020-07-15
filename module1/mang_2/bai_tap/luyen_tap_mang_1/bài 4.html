@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num=parseInt(prompt("nhập vào đi nè"));
+    let arr=new Array(num);
+    for(let i=0; i< arr.length;i++) {
+        arr[i] = parseInt(prompt("nhập giá trị cho phần tử" + (i + 1)))
+    }
+    alert(arr)
+    alert(arr.reverse().join("--"))
+</script>
+</body>
+</html>

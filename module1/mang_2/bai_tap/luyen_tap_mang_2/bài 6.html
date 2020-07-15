@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num=parseInt(prompt("nhập vào đi nè"));
+    let array=new Array(num);
+    //  let array=[num];
+    for(let i=0; i< array.length;i++) {
+        array[i] = prompt("nhập giá trị cho phần tử" + (i + 1))
+    }
+    for(let i=0;i< array.length;i++){
+        if( array[i]==="-"){
+            array[i]="_"
+        }
+    }alert(array)
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tìm giá trị lớn nhất trong mảng</title>
+</head>
+<body>
+       <script>
+           /*khai báo mảng và gán giá trị: */
+           let x = [-3,3,10];
+           /*khai báo biến: */
+           let max = x[0];
+           let index = 0;
+           for (let i = 1; i < x.length; i++) {
+               if (max< x[i]) {
+                   max = x[i];
+                   index = i;
+               }
+           }
+           alert("max: " + max + "tại : " + index);
+       </script>
+</body>
+</html>g v

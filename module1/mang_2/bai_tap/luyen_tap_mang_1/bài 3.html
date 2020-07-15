@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+     <script>
+         let num=parseInt(prompt("nhập vào đi nè"));
+         let arr=new Array(num);
+         for(let i=0; i< arr.length;i++) {
+             arr[i] = parseInt(prompt("nhập giá trị cho phần tử" + (i + 1)))
+         }
+         let max=arr[0];
+         let index=0;
+         let total=0;
+         let ave =0;
+         for(let j=0;j<arr.length;j++){
+               if(max<arr[j]) {
+                   max = arr[j];
+                   index = j
+               }
+                  total+=arr[j];
+                 ave=total/(arr.length)
+         }
+          document.write("max is"+max+"index" + index+"<br>");
+          document.write("avega is" + ave);
+
+     </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+     <p id="value"></p>
+    <script>
+        function isPrime(n){
+            let flag= true;
+            for(let i=2; i< n;i++){
+                if(n%i==0){
+                    // alert("không phaỉ là số nguyên tố")
+                    flag=false;
+                    break;
+                }
+            }
+            if(flag){
+                return true;
+            }else{
+                return false;
+            }
+        }
+        let number=prompt("nhập vào số lượng sô nguyên tố cần in ra");
+        let count=0;
+        let so=2;
+        let keQua="";
+        while (count < number ){
+            if( isPrime(so) ){
+                count++;
+                //document.write(so + "<br>");
+               keQua+=so+"   "
+            }
+            so++;
+        }
+        document.getElementById("value").innerText=keQua;
+    </script>
+</body>
+</html>

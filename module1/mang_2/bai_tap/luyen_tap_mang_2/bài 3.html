@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra kí tự số trong mảng</title>
+</head>
+<body>
+<script>
+     let num=parseInt(prompt("nhập vào đi nè"));
+     let array=new Array(num);
+
+     for(let i=0; i< array.length;i++) {
+         array[i] = prompt("nhập giá trị cho phần tử" + (i + 1))
+     }
+     let count=0;
+     alert(array);
+     for( let i=0; i<array.length;i++) {
+         if (isNaN(array[i])){
+            count++
+     }
+         alert(count)
+</script>
+</body>
+</html>
