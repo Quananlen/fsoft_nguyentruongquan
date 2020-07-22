@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> hàm kiểm tra số nguyên</title>
+</head>
+<body>
+<script>
+     // let number=parseInt(prompt(""))
+    function checkPrime(number) {
+        let check=true;
+        if(number<2) {
+            check = false;
+        }
+        else {
+            for (let i = 2; i < number; i++) {
+                if (number % i == 0) {
+                    check = false;
+                    break
+                }
+            }
+        }
+        if(check){
+              // alert( number +"  is  prime")
+             return true
+           }else {
+             // alert( number+"  is not prime")
+             return false
+           }
+    }
+     let result=[];
+     for(let i=0;i<100;i++){
+        if(checkPrime(i)){
+            result.push(i)
+        }
+     }
+    document.write(result)
+</script>
+</body>
+</html>

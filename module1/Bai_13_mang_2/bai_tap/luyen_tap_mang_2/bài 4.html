@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiểm tra có bao nhiêu kí tự</title>
+</head>
+<body>
+<script>
+
+    let str=prompt("nhập vào đây ");
+    console.log(str);
+    let array=str.split(' ');
+    console.log(array);
+    let count=0;
+        for (let i = 0; i < array.length; i++) {
+            if ( array[1]!=='')
+                count++;
+        }
+    alert(count);
+</script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>Adam</label>
+<input type="button" value="Eat" onclick="eatAdamApple() ">
+<input type="button" value="Check Gender" onclick="adam.gendercheck()">
+<input type="button" value="Test Weight " onclick="adam.checkWeight()">
+<br>
+<br>
+<br>
+<label>Eva</label>
+<input type="button" value="Eat" onclick="eatEvaApple()">
+<input type="button" value=" Check Gender" onclick="eva.gendercheck()">
+<input type="button" value=" Test Weught" onclick="eva.checkWeight()">
+<script>
+    class Apple {
+        constructor(weight) {
+            this.weight = weight;
+        }
+        decreaseApple() {
+            this.weight--;
+            return this.weight;
+        }
+    }
+    class Human {
+        constructor(name, gender, weight) {
+            this.name = name;
+            this.gender = gender;
+            this.weight = weight;
+        }
+        gendercheck() {
+            alert("Is " + this.gender);
+        }
+        eat() {
+            this.weight++;
+            return this.weight;
+        }
+        checkWeight() {
+            alert(" Weight is " + this.weight);
+        }
+    }
+    let adam = new Human("Adam", "male", 80);
+    let eva = new Human("Eva", "female", 50);
+    let apple = new Apple(10);
+    function eatAdamApple() {
+        if (apple.weight > 0) {
+            apple.decreaseApple();
+            adam.eat();
+        }
+        else {
+            alert("nothing apple")
+        }
+    }
+    function eatEvaApple() {
+        if (apple.weight > 0) {
+            apple.decreaseApple();
+            eva.eat();
+        }
+        else{
+            alert("nothing apple")
+        }
+    }
+</script>
+</body>
+</html>

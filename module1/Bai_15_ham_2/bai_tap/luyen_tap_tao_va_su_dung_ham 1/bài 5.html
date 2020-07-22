@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nameIdol = prompt("Enter nameIdol");
+    function findIdol(nameStar) {
+        let array1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+        let array2 = ["Ursa", "Minor", "Tarurus", "Cygnus", "Lyra", "Aquila","Major", "Leo"]
+        let check = false;
+        for (let i = 0; i < array1.length; i++) {
+            if (array1[i] == nameIdol) {
+                alert(array1[i] = array2[i]);
+                check = true;
+                break;
+            }
+        }
+        if (!check) {
+            alert(" didnot find Idol");
+        }
+    }
+    findIdol(nameIdol)
+</script>
+</body>
+</html>

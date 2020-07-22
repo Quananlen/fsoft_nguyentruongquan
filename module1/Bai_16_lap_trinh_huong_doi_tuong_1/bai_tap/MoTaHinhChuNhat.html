@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas" height="" width="" style="" > </canvas>
+<script>
+     let height = parseInt(prompt(" Enter height:"));
+    let width = parseInt(prompt("Enter width :"));
+
+    class Rectangle {
+        constructor(height,width) {
+            this.height = height;
+            this.width = width;
+        }
+        primeri(){
+            let primeri=(this.height+this.width)*2;
+            return primeri;
+        }
+        area(){
+            let area=this.width*this.height;
+            return area
+        }
+        canvashcn(){
+            let c=document.getElementById("myCanvas");
+            let ctx=c.getContext("2d");
+            ctx.fillStyle = "#4CAF50";
+            ctx.fillRect(0,0,this.height,this.width);
+        }
+    }
+    Rectangle1 = new Rectangle(height,width);
+    alert(Rectangle1.primeri());
+    alert(Rectangle1.area());
+    Rectangle1.canvashcn()
+</script>
+</body>
+</html>

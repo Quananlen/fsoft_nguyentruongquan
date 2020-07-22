@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = parseInt(prompt("nhập số lượng phần tử của mảng"))
+    let array1 = new Array(num);
+    for (let i = 0; i < array1.length; i++) {
+        array1[i] = parseInt(prompt("nhập giá trị cho phần tử" + (i + 1)))
+    }
+    let num1 = prompt("nhập số cần tìm");
+    let count = 0;
+
+    function findCharInArray(number,array) {
+        for (let i = 0; i < (array.length); i++) {
+            if (array[i] ==number) {
+                count = count + 1;
+            }
+        }
+        if (count > 0) {
+            return count
+        } else {
+            return -1
+        }
+    }
+    alert(findCharInArray(num1,array1))
+</script>
+</body>
+</html>

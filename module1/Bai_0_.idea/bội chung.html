@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=parseInt(prompt("nhập a"))
+    let b=parseInt(prompt("nhập b"))
+    let c=a*b;
+    let BCNN=0
+    for(let i=1;i<c;i++)
+         if(i%a==0 && i%b==0){
+             BCNN=i;
+             break
+        }
+     alert(BCNN)
+</script>
+</body>
+</html>
