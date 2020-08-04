@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let num = parseInt(prompt("nhập vào đây"))
+    // let array = Array(num);
+    // for (let i = 0; i < array.length; i++) {
+    //     array[i] = prompt("nhập vào phần tử thứ " + (i + 1))
+    // }
+    // let total = 0;
+    // for (let i = 0; i < array.length - 1; i++) {
+    //     if (array[i] % 2 !== 0) {
+    //         total+=parseInt(array[i])
+    //     }
+    // }
+    function checkPrime(array) {
+        let check = true;
+        for (let i = 0; i < array.length - 1; i++) {
+            if (array[i] % i === 0 && i % 2 == 0) {
+                check = false;
+                break
+            }
+        }
+        if (check) {
+            // alert( number +"  is  prime")
+            return true
+        } else {
+            // alert( number+"  is not prime")
+            return false
+        }
+    }
+
+    let array = [1, 2, 3, 4, 5, 6];
+    let result =
+    for (let i = 0; i < array.length - 1; i++) {
+        if (checkPrime(array[i])) {
+            result.push(i)
+        }
+    }
+    document.write(result)
+
+
+</script>
+</body>
+</html>

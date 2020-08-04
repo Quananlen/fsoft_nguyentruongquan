@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm Tra Số Hoàn Hảo</title>
+</head>
+<body>
+<script>
+    let number;
+    do{
+        number=parseFloat(prompt("nhập vào "))
+    }while(number<0||!Number.isInteger(number));
+    function checkNumberPerfect(a) {
+        let sum = 0;
+        for (let i = 0; i <= (a / 2); i++) {
+            if (a % i === 0) {
+                sum += i;
+            }
+        }
+        if (sum == a) {
+            alert(a + " : It is number perfect ")
+        } else {
+            alert(a + " :It isn't number perfect  ")
+        }
+    }
+    checkNumberPerfect(number);
+</script>
+</body>
+</html>

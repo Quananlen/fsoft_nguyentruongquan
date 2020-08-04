@@ -7,14 +7,14 @@
 <body>
 <script>
     let m = "456";
-    array = m.split('');
+    let array = m.split('');
     let p = 0;
     let s = 1;
-    for (let i = 0; i <array.length; i++) {
+    for (let i = 0; i < array.length; i++) {
         p += parseInt(array[i]);
-        s*=parseInt(array[i])
+        s *= array[i]
     }
-    alert(p+"tich"+s)
+    alert("tong:" + p + "\n" + "tich:" + s)
 
 </script>
 </body>

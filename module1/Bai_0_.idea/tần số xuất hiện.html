@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    let str="str str str count    "
+    function tanSoXuatHien(a) {
+        a = a.split(" ");
+        alert(a);
+        let b = [];
+        let dem = 0;
+        for (let i = 0; i < a.length; i++) {
+            dem = 1;
+            for (let j =i+1;j<a.length; j++) {
+                if (a[i] === a[j] ) {
+                    dem++;
+                    a.splice(j, 1);
+                    j--;
+                }
+            }
+            b.push(a[i] + ": "+ dem);
+        }
+        document.writeln("tần số xuất hiện là: "+b)
+    }
+    tanSoXuatHien(str);
+
+</script>
+</body>
+</html>

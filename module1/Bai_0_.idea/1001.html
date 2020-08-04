@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = parseInt(prompt("nhập vào mảng"));
+    let array1 = new Array(num);
+    for (let i = 0; i < array1.length; i++) {
+        array1[i] = parseInt(prompt("nhập vào phần tử thứ " + (i + 1)))
+    }
+    alert(array1);
+    function trungBinhCong(array) {
+        let sum=0;
+        let temp=0;
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] % 3===0) {
+                sum += array[i];
+                temp++
+            }
+        }
+        return sum/temp
+    }
+    let trungBinhCong = trungBinhCong(array1);
+    alert(trungBinhCong)
+</script>
+</body>
+</html>

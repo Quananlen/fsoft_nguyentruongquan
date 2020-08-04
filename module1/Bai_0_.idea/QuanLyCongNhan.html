@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3 >Quản Lý Công Nhân</h3>
+<input type="button" value="Thêm Mới Công Nhân" onclick="themMoiNV();">
+<p id="hienThi"></p>
+<script>
+    class CongNhan {
+        constructor(tenCN, diaChi, luong,chucVu) {
+            // this.sTT = sTT;
+            this.tenCN = tenCN;
+            this.diaChi = diaChi;
+            this.luong = luong;
+            this.chucVu = chucVu;
+        }
+        getTenCN() {
+            return this.tenCN;
+        }
+        getDiaChi() {
+            return this.diaChi;
+        }
+        getLuong() {
+            return this.luong;
+        }
+        getChucVu(){
+            return this.chucVu
+        }
+        setSTT(sTT) {
+            this.sTT = sTT;
+        }
+        setTenCN(tenCN) {
+            this.tenCN = tenCN;
+        }
+        setDiaChi(diaChi) {
+            this.diaChi = diaChi;
+        }
+        setLuong(luong) {
+            this.luong = luong;
+        }
+        setChucVu(chucVu){
+            this.chucVu=chucVu
+        }
+        getInfo() {
+            return "\n1. Tên công nhân: " + this.tenCN +
+                "\n2. Địa Chỉ: " + this.diaChi + "\n 3. Lương: " + this.luong+"\n 4. Chức Vụ:"+this.chucVu;
+        }
+    }
+    let danhSachCN = [];
+    hienThi(danhSachCN);
+    function hienThi(danhSach) {
+        // let danhSachDaSX = sapXepTheoTen(danhSach);
+        let doDaiDS = danhSach.length;
+        let bang = '<table border="1" >\n' +
+            '    <tr>\n' +
+            '        <th> STT</th>\n' +
+            '        <th> Tên Công Nhân</th>\n' +
+            '        <th> Địa Chỉ</th>\n' +
+            '        <th> Lương</th>\n' +
+            '        <th> Chức Vụ</th>\n' +
+            '        <th> Sửa</th>\n' +
+            '        <th> Xóa</th>\n' +
+            '    </tr>';
+        for (let i = 0; i < doDaiDS; i++) {
+            bang += '<tr>\n' +
+                '        <td> ' + (i + 1) + '</td>\n' +
+                '        <td> ' + danhSach[i].getTenCN() + '</td>\n' +
+                '        <td> ' + danhSach[i].getDiaChi() + '</td>\n' +
+                '        <td> ' + danhSach[i].getLuong() + '</td>\n' +
+                '        <td> ' + danhSach[i].getChucVu() + '</td>\n' +
+                '        <td> <input type="button" value="sửa" onclick="suaThongTinCN(' + i + ')"></td>\n' +
+                '        <td> <input type="button" value="xóa" onclick="xoaCN(' + i + ');"></td>\n' +
+                '    </tr>';
+        }
+        bang += '</table>';
+        document.getElementById("hienThi").innerHTML = bang;
+    }
+    function themMoiNV() {
+        let tenCN = prompt(" Nhập tên công nhân");
+        let diaChi = prompt(" Nhập đia chỉ công nhân");
+        let luong = parseInt(prompt(" Nhập lương công nhân"));
+        let chucVu = prompt("Nhập chức vụ của công nhân");
+        let congNhan = new CongNhan(tenCN, diaChi,luong, chucVu);
+        danhSachCN.push(congNhan);
+        hienThi(danhSachCN);
+    }
+
+    function xoaCN(i) {
+        let xacNhanXoa = confirm(" Bạn có muốn xóa tên công nhân: " + danhSachCN[i].getTenCN());
+        if (xacNhanXoa) {
+            danhSachCN.splice(i, 1);
+        } else {
+            alert(" Bạn ko muốn xóa công nhân này")
+        }
+        hienThi(danhSachCN);
+    }
+    function suaThongTinCN(i) {
+        let luaChon = prompt(" Chọn thông tin cần sửa \n" +
+            danhSachCN[i].getInfo() + "\n 5.Thoát");
+        switch (luaChon) {
+            case "1":
+                let tenCN = prompt("Nhập lại tên công nhân");
+                danhSachCN[i].setTenCN(tenCN);
+                suaThongTinCN(i);
+                break;
+            case "2":
+                let diaChi = prompt("Nhập lại địa chỉ công nhân");
+                danhSachCN[i].setDiaChi(diaChi);
+                suaThongTinCN(i);
+                break;
+            case "3":
+                let luong = prompt("Nhập lại lương công nhân");
+                danhSachCN[i].setLuong(luong);
+                suaThongTinCN(i);
+                break;
+            case "4":
+                let chucVu = prompt("Nhập lại chức vụ công nhân");
+                danhSachCN[i].setChucVu(chucVu);
+                suaThongTinCN(i);
+                break;
+            case "5":
+                break;
+            default:
+                alert("bạn chưa chọn đúng. Chọn lại");
+                suaThongTinCN(i);
+        }
+        hienThi(danhSachCN);
+    }
+
+    //     function sapXepTheoTen(danhSach) {
+    //     let danhSachTen = [];
+    //     let ten = "";
+    //     let danhSachSapXep = [];
+    //     // lấy danh sách tên của nhân viên
+    //     for (let i = 0; i < danhSach.length; i++) {
+    //         ten = danhSach[i].getTenNV();
+    //         danhSachTen.push(ten);
+    //     }
+    //     danhSachTen.sort();
+    //     // lấy ra danh sách sắp xếp theo theo tên
+    //     for (let i = 0; i < danhSachTen.length; i++) {
+    //         for (let j = 0; j < danhSach.length; j++) {
+    //             if (danhSachTen[i] == danhSach[j].getTenNV()) {
+    //                 danhSachSapXep.push(danhSach[j]);
+    //                 break;
+    //             }
+    //         }
+    //     }
+    //     // trả về danh sách đã sắp xếp
+    //     return danhSachSapXep;
+    // }
+    //
+    // // hàm kiểm tra email
+    // function kiemTraEmail(email) {
+    //     let regex = /^\w{3,}@[a-zA-Z]{3,5}\.[a-zA-Z]{2,3}$/;
+    //     return regex.test(email);
+    //
+    // }
+    //
+    // //** Các hàm dưới làm thêm cho mọi người nếu cần thiết có thể dùng
+    //
+    // // hàm kiểm tra ngày tháng (dd/mm/yyyy) ( ngay 01-31, tháng từ 01-12, năm 1900 đến 2020)
+    // function kiemTraNgayThang(ngay) {
+    //     let regex = /^((0[1-9])|([1-2][0-9])|(3[0-1]))\/(([0][1-9])|1[0-2])\/(19[0-9]{2}|20[0-1][0-9]|2020)$/;
+    //     return regex.test(ngay);
+    // }
+    //
+    // // hàm định dạng tháng/năm (mm/yyyy) (tháng từ 01-12, năm 1900 đến 2999) .chú ý kiểm tra kỹ xem đúng chưa
+    // function kiemTraNgayThang(ngay) {
+    //     let regex = /^(([0][1-9])|1[0-2])\/(19[0-9]{2}|2[0-9]{3})$/;
+    //     return regex.test(ngay);
+    // }
+    //
+    // // hàm kiểm tra mã nhân viên định dạng (MNV-XXXX) , Bắt đầu bằng "MNV-", tiếp theo X là dạng số từ 0-9 (gồm 4 số)
+    // function kiemTraMaNhaVien(maNV) {
+    //     let regex = /^MNV-[0-9]{4}$/;
+    //     return regex.test(ngay);
+    // }
+    // // let nhanVien1 = new NhanVien("001", "chanh1", "12/12/2020", "chanhtv@gmail.com");
+    // // let nhanVien2 = new NhanVien("002", "chanh3", "12/12/2020", "chanhtv@gmail.com");
+    // // let nhanVien3 = new NhanVien("003", "chanh2", "12/12/2020", "chanhtv@gmail.com");
+    // //danhSachNV.push(nhanVien1);
+    // // danhSachNV.push(nhanVien2);
+    // // danhSachNV.push(nhanVien3);
+</script>
+</body>
+</html>
+</body>
+</html>

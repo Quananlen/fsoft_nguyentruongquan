@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let str="12sdbhcjb sduzbcsdb";
+    // let array=str.split("");
+    // let count=0;
+    // for(let i=0;i<array.length;i++){
+    //     if(isNaN(array[i])){
+    //         count++
+    //     }
+    // }
+    // alert(count)
+
+        let str = prompt("nhập vào chuổi");
+
+    function kiemTraTanSuat(str) {
+        array = str.split(" ");
+        let count = 0;
+        let b=[];
+        for (let i = 0; i < array.length; i++) {
+            count = 1;
+            for (let j = i + 1; j < array.length; j++) {
+                if (array[i] === array[j]) {
+                    count++;
+                    array.splice(j, 1);
+                    j--
+                }
+            }
+            b.push(array[i]+":"+ count)
+        }
+        alert("tần suất là : "+ b+"\n")
+    }
+    kiemTraTanSuat(str)
+</script>
+</body>
+</html>
