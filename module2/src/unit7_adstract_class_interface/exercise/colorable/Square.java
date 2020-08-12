@@ -1,6 +1,6 @@
 package unit7_adstract_class_interface.exercise.colorable;
 
-public class Square extends Shape implements Colorable{
+public class Square extends Shape{
     private double side = 1;
     public Square() {
     }
@@ -18,7 +18,12 @@ public class Square extends Shape implements Colorable{
     }
 
     @Override
-    public void howToColor() {
+    public String toString() {
+        return "The area of square is "+getSide();
+    }
 
+    @Override
+    public void howToColor() {
+        System.out.println("Color all four sides");
     }
 }

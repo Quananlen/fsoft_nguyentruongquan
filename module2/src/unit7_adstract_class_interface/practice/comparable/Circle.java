@@ -1,4 +1,4 @@
-package unit7_adstract_class_interface.practice.Comparable;
+package unit7_adstract_class_interface.practice.comparable;
 
 public class Circle {
     private String color = "red";

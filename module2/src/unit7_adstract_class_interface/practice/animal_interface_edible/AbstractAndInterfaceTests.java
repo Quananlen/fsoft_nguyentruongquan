@@ -14,8 +14,8 @@ public class AbstractAndInterfaceTests {
         }
         Fruit[] fruits = new Fruit[2];
         fruits[0] = new Orange();
-        fruits[1]=new Apple();
-        for(Fruit fruit: fruits){
+        fruits[1] = new Apple();
+        for (Fruit fruit : fruits) {
             System.out.println(fruit.howToEat());
         }
     }
