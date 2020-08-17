@@ -6,7 +6,6 @@ public class TestStatic {
         count++;
         System.out.println(count);
     }
-
     public static void main(String[] args) {
         TestStatic number1=new TestStatic();
         TestStatic number2=new TestStatic();

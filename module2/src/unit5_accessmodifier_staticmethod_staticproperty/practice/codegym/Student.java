@@ -1,20 +1,21 @@
 package unit5_accessmodifier_staticmethod_staticproperty.practice.codegym;
 
 public class Student {
-    private int rollno;
-    private String name;
-    private static String college = "BBDIT";
+    public int rollno;
+    public String name;
+    public static String college = "BBDIT";
 
-    Student(int r, String n) {
-        rollno = r;
-        name = n;
-    }
-    static void change(){
-        college ="CODEGYM";
-    }
-    void display(){
-        System.out.println(rollno+" "+name+" "+college);
+    Student(int index, String name) {
+        rollno = index;
+        name = name;
     }
 
+    static void change() {
+        college = "CODEGYM";
+    }
+
+    void display() {
+        System.out.println(rollno + " " + name + " " + college);
+    }
 }
 
