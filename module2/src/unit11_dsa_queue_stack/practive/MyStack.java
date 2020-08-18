@@ -4,7 +4,6 @@ public class MyStack {
     private int arr[];
     private int size;
     private int index=0;
-    public  MyStack(){}
     public MyStack(int size){
         this.size=size;
         arr=new int[size] ;

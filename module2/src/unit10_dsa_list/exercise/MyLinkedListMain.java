@@ -36,11 +36,11 @@ public class MyLinkedListMain {
         Student student3 = new Student(3, "Quân3");
         Student student4 = new Student(4, "Quân4");
         Student student5 = new Student(5, "Quân5");
-//        studentMyLinkedlist.addFirst(student1);
-//        for(int i=0 ;i<studentMyLinkedlist.size();i++){
-//            Student student = MyLinkedlist.get(i);
-//            System.out.println(student.getName());
-//        }
-//    }
-}}
+        studentMyLinkedlist.addFirst(student1);
+        for(int i=0 ;i<studentMyLinkedlist.size();i++){
+            Student student = (Student) studentMyLinkedlist.get(i);
+            System.out.println(student.getName());
+        }
+    }
+}
 
