@@ -1,4 +1,4 @@
-package unit11_dsa_queue_stack.practive;
+package unit11_dsa_queue_stack.practice;
 
 import java.util.EmptyStackException;
 import java.util.LinkedList;

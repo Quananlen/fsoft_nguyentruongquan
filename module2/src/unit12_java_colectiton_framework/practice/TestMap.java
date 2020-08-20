@@ -1,4 +1,4 @@
-package unit12_java_colectiton_framework.practive;
+package unit12_java_colectiton_framework.practice;
 
 import java.util.HashMap;
 import java.util.LinkedHashMap;

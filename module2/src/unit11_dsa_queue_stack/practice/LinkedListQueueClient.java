@@ -1,4 +1,4 @@
-package unit11_dsa_queue_stack.practive;
+package unit11_dsa_queue_stack.practice;
 
 public class LinkedListQueueClient {
     public static void main(String[] args) {
