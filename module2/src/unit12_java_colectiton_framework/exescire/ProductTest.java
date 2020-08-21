@@ -21,7 +21,7 @@ public class ProductTest {
                     System.out.println("Enter your name Product" + idProduct + " :");
                     Scanner sc1 = new Scanner(System.in);
                     String nameProduct = sc1.nextLine();
-                    arrProduct.add(new Product(idProduct, nameProduct));
+//                    arrProduct.add(new Product(idProduct, nameProduct));
                     break;
                 case 2:
                     System.out.println("Edit product :");
