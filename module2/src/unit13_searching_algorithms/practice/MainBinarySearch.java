@@ -1,4 +1,4 @@
-package unit13_searching.practice;
+package unit13_searching_algorithms.practice;
 
 public class MainBinarySearch extends BinarySearch {
     public static void main(String[] args) {

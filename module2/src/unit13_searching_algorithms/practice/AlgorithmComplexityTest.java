@@ -1,4 +1,4 @@
-package unit13_searching.practice;
+package unit13_searching_algorithms.practice;
 
 import java.util.Scanner;
 

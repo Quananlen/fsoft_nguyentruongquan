@@ -1,4 +1,4 @@
-package unit13_searching.exercise.find_string_increase_max;
+package unit13_searching_algorithms.exercise.find_string_increase_max;
 
 import java.util.LinkedList;
 import java.util.Scanner;
@@ -7,13 +7,10 @@ public class LengthString {
     public static void main(String[] args) {
         // Create a Scanner
         Scanner input = new Scanner(System.in);
-
         // Prompt the user to enter a string
         System.out.print("Enter a string: ");
         String string = input.nextLine();
-
         LinkedList<Character> max = new LinkedList<>();
-
         // Find the maximum increasingly ordered subsequence
         for (int i = 0; i < string.length(); i++) {
             LinkedList<Character> list = new LinkedList<>();
@@ -23,14 +20,12 @@ public class LengthString {
                     list.add(string.charAt(j));
                 }
             }
-
             if (list.size() > max.size()) {
                 max.clear();
                 max.addAll(list);
             }
             list.clear();
         }
-
         // Display the maximum consecutive
         // increasingly ordered substring
         for (Character ch: max) { // single loop

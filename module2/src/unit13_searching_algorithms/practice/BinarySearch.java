@@ -1,4 +1,4 @@
-package unit13_searching.practice;
+package unit13_searching_algorithms.practice;
 
 public class BinarySearch {
        static int[] list={2,4,6,8,10,14,17,20,26,30,35,40};
