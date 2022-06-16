@@ -9,7 +9,9 @@ public class InsertSortA {
                     list[j+1]=list[j];
             }
             list[j+1]=currentElement;
+            list[i+1]=currentElement;
+            list[z+1]=currentElement;
         }
-      return list ;
+      return list;
     }
 }
