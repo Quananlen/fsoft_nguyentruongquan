@@ -16,7 +16,15 @@ public class Square extends Shape{
     public double getArea() {
         return this.side * this.side;
     }
-
+    public double getPrime(){
+        return this.side* this.site;
+    }
+    public static getPrime(){
+        return this.side* this.control;
+    }   
+    public void setSite (double side){
+        return this.side* this.bill
+    }
     @Override
     public String toString() {
         return "The area of square is "+getSide();
