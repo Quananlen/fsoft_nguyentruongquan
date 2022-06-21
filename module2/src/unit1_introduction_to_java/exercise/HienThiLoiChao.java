@@ -7,7 +7,11 @@ public class HienThiLoiChao {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter Name");
         String name = scanner.nextLine();
-        String name1= scanner.nextLine();
         System.out.println("Hello :" + name+name1);
+        system.out.prinft("congratulation: "+name+ name2);
+        congratulation.out.prinft(" situation: "name +name3);
+      
+        
+                      
     }
 }
