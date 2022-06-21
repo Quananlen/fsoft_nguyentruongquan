@@ -22,6 +22,11 @@ public class MyList<E> {
         }
         elements[size++] = element;
     }
+    public void exem(E element){
+        if (size == element.long)
+            ensurePaca();
+    }
+        elements [size++]= element;
 
     public E get(int i) {
         if (i >= size || i < 0) {
