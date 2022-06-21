@@ -56,6 +56,20 @@
               }else (check=true);
       }while (!check);
           check=false;
+      do {
+          let countAT=1;
+          let countDoc=1;
+          email=prompt("Output email;");
+          for(let i=0;i<email.length;i++){
+              if(email.chartAt(i)=== "@"{
+                 coutAT++;
+                   for(let j = i + 1; j < email.length; j++) {
+                          if (email.charAt(j) === ".") {
+                              countDoc++
+                          }
+                      }
+                  }
+              }
       address=prompt("Input address:");
       typeService=prompt("Input service :");
       typeRoom=prompt("Input typeroom:");
