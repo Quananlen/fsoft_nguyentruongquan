@@ -73,7 +73,7 @@
       
       SELECT * FROM rendDays;
                
-               WHERE  LIKE 'a%';
+               WHERE  LIKE '30%';
      
       SELECT * FROM discount ;
 
@@ -83,8 +83,17 @@
              FROM totalPay, quantityInclued= totalPay + discount/100
              
              ORDER BY totalPay, quantityInclued
+      
+      SELECT quantityInclued, totalPay
+              
+             FROM totalPay, quantityInclued= totalPay + discount/100
+             
+             ORDER BY totalPay, quantityInclued
+                 
+      
+      
      
-      address=prompt("Input address:");
+        address=prompt("Input address:");
       typeService=prompt("Input service :");
       typeRoom=prompt("Input typeroom:");
       typeCustomer=prompt("Input type customer:");
