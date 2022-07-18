@@ -57,7 +57,7 @@
       }while (!check);
           check=false;
       do {
-          let countAT=1;
+          let countAT=4;
           let countDoc=1;
           email=prompt("Output email;");
           for(let i=0;i<email.length;i++){
@@ -70,6 +70,20 @@
                       }
                   }
               }
+      
+      SELECT * FROM rendDays;
+               
+               WHERE  LIKE 'a%';
+     
+      SELECT * FROM discount ;
+
+               WHERE CustomerName LIKE 'a%';
+      SELECT quantityInclued, totalPay
+              
+             FROM totalPay, quantityInclued= totalPay + discount/100
+             
+             ORDER BY totalPay, quantityInclued
+     
       address=prompt("Input address:");
       typeService=prompt("Input service :");
       typeRoom=prompt("Input typeroom:");
