@@ -89,11 +89,13 @@
              FROM totalPay, quantityInclued= totalPay + discount/100
              
              ORDER BY totalPay, quantityInclued
+      
+      SELECT * FROM order;
+      SELECT * FROM Custormer From Comtor;
+      SELECT * FROM Customers ;
                  
-      
-      
      
-        address=prompt("Input address:");
+      address=prompt("Input address:");
       typeService=prompt("Input service :");
       typeRoom=prompt("Input typeroom:");
       typeCustomer=prompt("Input type customer:");
@@ -102,6 +104,8 @@
       rendDays=prompt("renddays");
       totalPay= 300*rendDays*(1-discount/100);
       alert("name:"+name + "cmnd :" +cmnd +"totalPay :"+totalPay)
-  </script>
+      custermer=prompt("Input Custermer:");
+                 
+</script>
 </body>
 </html>
