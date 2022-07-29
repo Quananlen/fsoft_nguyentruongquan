@@ -78,7 +78,7 @@
       SELECT * FROM discount ;
 
                WHERE CustomerName LIKE 'a%';
-      SELECT quantityInclued, totalPay
+      SELECT quantityInclued, totalPay, airPay
               
              FROM totalPay, quantityInclued= totalPay + discount/100
              
@@ -105,6 +105,7 @@
       totalPay= 300*rendDays*(1-discount/100);
       alert("name:"+name + "cmnd :" +cmnd +"totalPay :"+totalPay)
       custermer=prompt("Input Custermer:");
+      totalPay
                  
 </script>
 </body>
